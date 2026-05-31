@@ -38,14 +38,6 @@ const decision = [
   { q: "Need Gate Pass?", a: "Student App" },
 ];
 
-const tutorials = [
-  "How to Pay Fees",
-  "How to Check CIA Marks",
-  "How to Check Results",
-  "How to Track Attendance",
-  "How to Request Gate Pass",
-];
-
 export function Portals() {
   return (
     <section id="portals" className="mx-auto max-w-7xl px-4 py-20">
