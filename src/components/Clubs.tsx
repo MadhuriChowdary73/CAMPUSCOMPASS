@@ -3,21 +3,22 @@ import { ArrowUpRight, Sparkles } from "lucide-react";
 import { InstagramIcon as Instagram } from "@/components/icons/InstagramIcon";
 
 const clubs = [
-  { name: "Chakravyuha", tag: "Cybersecurity", ig: "https://www.instagram.com/chakravyuha_avv/", grad: "from-primary/60 to-gold/30" },
-  { name: "Relu", tag: "AI / ML", ig: "https://www.instagram.com/relu_avv/", grad: "from-primary/50 to-primary/10" },
-  { name: "Prachurya", tag: "Literary", ig: "https://www.instagram.com/prachurya_avv/", grad: "from-gold/50 to-primary/20" },
-  { name: "Robotics Club", tag: "Robotics", ig: "https://www.instagram.com/roboticsclub.avv/", grad: "from-primary/60 to-primary/10" },
-  { name: "Drsya", tag: "Photography", ig: "https://www.instagram.com/drsya__av/", grad: "from-gold/40 to-primary/30" },
-  { name: "Advika", tag: "Innovation", ig: "https://www.instagram.com/advika_avv/", grad: "from-primary/40 to-gold/40" },
-  { name: "Saptaswara", tag: "Music", ig: "https://www.instagram.com/saptaswara_av/", grad: "from-gold/50 to-gold/10" },
-  { name: "Nrityasparsh", tag: "Dance", ig: "https://www.instagram.com/nrityasparsh_av/", grad: "from-primary/50 to-gold/30" },
-  { name: "Avisruta", tag: "Sports", ig: "https://www.instagram.com/avisruta_avv/", grad: "from-primary/60 to-primary/20" },
-  { name: "Raksha", tag: "Safety & service", ig: "#", grad: "from-gold/40 to-primary/40" },
+  { name: "Relu", tag: "AI / ML", desc: "Refining Logic & Unleashing AI — workshops and projects in AI/ML.", ig: "https://www.instagram.com/relu_avv/", grad: "from-primary/50 to-primary/10" },
+  { name: "Robotics Club", tag: "Robotics", desc: "Build bots, learn embedded systems, compete in robotics events.", ig: "https://www.instagram.com/roboticsclub.avv/", grad: "from-primary/60 to-primary/10" },
+  { name: "Avisruta", tag: "Sports", desc: "Campus sports club — tournaments, training and inter-college fixtures.", ig: "https://www.instagram.com/avisruta_avv/", grad: "from-primary/60 to-primary/20" },
+  { name: "Chakravyuha", tag: "Hackathons", desc: "Hackathons and problem-solving skills — coding contests and challenges.", ig: "https://www.instagram.com/chakravyuha_avv/", grad: "from-primary/60 to-gold/30" },
+  { name: "Prachurya", tag: "Tech Events", desc: "Conducts tech events, talks and developer meetups on campus.", ig: "https://www.instagram.com/prachurya_avv/", grad: "from-gold/50 to-primary/20" },
+  { name: "Raksha", tag: "Announcements", desc: "Club announcements and official student club communications hub.", ig: "#", grad: "from-gold/40 to-primary/40" },
+  { name: "Drsya", tag: "Media", desc: "Media club — photography, videography and campus coverage.", ig: "https://www.instagram.com/drsya__av/", grad: "from-gold/40 to-primary/30" },
+  { name: "Advika", tag: "Art", desc: "Art club — painting, sketching, design and creative showcases.", ig: "https://www.instagram.com/advika_avv/", grad: "from-primary/40 to-gold/40" },
+  { name: "Saptaswara", tag: "Singing", desc: "Singing club — vocals, choir, open mics and music nights.", ig: "https://www.instagram.com/saptaswara_av/", grad: "from-gold/50 to-gold/10" },
+  { name: "Nrityasparsh", tag: "Dance", desc: "Dance club — choreography, performances and dance workshops.", ig: "https://www.instagram.com/nrityasparsh_av/", grad: "from-primary/50 to-gold/30" },
+  { name: "Student Council", tag: "Council", desc: "Official Amrita Student Council — leadership, events & student voice.", ig: "https://www.instagram.com/amritastudentcouncil/", grad: "from-primary/70 to-gold/40" },
 ];
 
 const quiz = [
-  { q: "Pick a vibe", opts: [{ l: "Build stuff", v: ["Robotics Club", "Relu", "Advika"] }, { l: "Perform", v: ["Saptaswara", "Nrityasparsh", "Drsya"] }, { l: "Compete", v: ["Avisruta", "Chakravyuha"] }, { l: "Express", v: ["Prachurya", "Drsya"] }] },
-  { q: "Weekend energy", opts: [{ l: "Lab / code", v: ["Relu", "Chakravyuha", "Robotics Club"] }, { l: "Stage / studio", v: ["Saptaswara", "Nrityasparsh"] }, { l: "Field", v: ["Avisruta"] }, { l: "Camera / pen", v: ["Drsya", "Prachurya"] }] },
+  { q: "Pick a vibe", opts: [{ l: "Build stuff", v: ["Robotics Club", "Relu", "Advika"] }, { l: "Perform", v: ["Saptaswara", "Nrityasparsh", "Drsya"] }, { l: "Compete", v: ["Avisruta", "Chakravyuha"] }, { l: "Organise", v: ["Prachurya", "Student Council", "Raksha"] }] },
+  { q: "Weekend energy", opts: [{ l: "Lab / code", v: ["Relu", "Chakravyuha", "Robotics Club"] }, { l: "Stage / studio", v: ["Saptaswara", "Nrityasparsh"] }, { l: "Field", v: ["Avisruta"] }, { l: "Camera / art", v: ["Drsya", "Advika"] }] },
 ];
 
 export function Clubs() {
@@ -43,8 +44,8 @@ export function Clubs() {
         <div className="grid aspect-square place-items-center overflow-hidden rounded-2xl bg-gradient-to-br from-primary/60 to-gold/30 text-6xl">⚡</div>
         <div>
           <div className="inline-flex items-center gap-2 text-[10px] uppercase tracking-widest text-gold"><Sparkles className="h-3 w-3" /> Featured spotlight</div>
-          <div className="mt-1 font-display text-2xl font-bold">Chakravyuha · Cybersecurity Club</div>
-          <p className="mt-2 text-sm text-muted-foreground">CTFs, hands-on security workshops, red-team challenges, and an active Instagram for events. Beginner-friendly — no prior security experience required.</p>
+          <div className="mt-1 font-display text-2xl font-bold">Chakravyuha · Hackathons & Problem Solving</div>
+          <p className="mt-2 text-sm text-muted-foreground">Hackathons, coding contests, problem-solving sessions and DSA challenges. Beginner-friendly — sharpen your skills with active student-led events.</p>
           <a href="https://www.instagram.com/chakravyuha_avv/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center gap-2 rounded-xl bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground">
             <Instagram className="h-4 w-4" /> Follow @chakravyuha_avv
           </a>
@@ -61,6 +62,7 @@ export function Clubs() {
             <div>
               <div className="text-[10px] uppercase tracking-widest text-gold">{c.tag}</div>
               <div className="font-display text-base font-bold">{c.name}</div>
+              <p className="mt-1 text-[11px] leading-snug text-muted-foreground">{c.desc}</p>
             </div>
             <div className="mt-auto flex gap-2">
               <a href={c.ig} target="_blank" rel="noreferrer" className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-xl bg-primary px-2.5 py-1.5 text-xs font-semibold text-primary-foreground">
