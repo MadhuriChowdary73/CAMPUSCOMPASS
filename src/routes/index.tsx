@@ -47,7 +47,6 @@ function Index() {
       <FirstMonth />
       <Ticker />
       <FAQ />
-      <Resources />
       <Footer />
     </main>
   );
