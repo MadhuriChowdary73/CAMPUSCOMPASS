@@ -10,9 +10,9 @@ const GRADES = [
 
 export function CGPAHub() {
   const [courses, setCourses] = useState<Course[]>([
-    { name: "Mathematics", credits: 4, grade: 9 },
+    { name: "Mathematics", credits: 4, grade: 9.5 },
     { name: "Programming", credits: 4, grade: 10 },
-    { name: "Physics", credits: 3, grade: 8 },
+    { name: "Physics", credits: 3, grade: 9 },
   ]);
   const [sgpas, setSgpas] = useState<{ sem: number; sgpa: number; credits: number }[]>([
     { sem: 1, sgpa: 8.5, credits: 22 },
