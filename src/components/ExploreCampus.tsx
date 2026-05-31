@@ -13,17 +13,23 @@ type Spot = {
 };
 
 const spots: Spot[] = [
-  { id: "academic", name: "Academic Block", x: 42, y: 38, tag: "Classes & Labs", facts: ["Timings ~ 8:45 AM – 5:00 PM", "Schedule varies by department", "Lecture halls, labs & faculty rooms"], tip: "Reach 10 min early on Day 1." },
-  { id: "canteen", name: "Canteen", x: 28, y: 50, tag: "Food & hangout", facts: ["Open 8:00 AM – 8:30 PM", "Egg + Non-veg available", "Popular: Masala Dosa"], tip: "Eat in — takeaway to hostel is limited." },
-  { id: "boys", name: "Boys Hostel", x: 14, y: 80, tag: "Residence", facts: ["Gate closes ~ 8:45–9:00 PM", "No outside / non-veg food", "No kettles or cooking gear", "Laundry every weekend"] },
-  { id: "girls", name: "Girls Hostel", x: 32, y: 80, tag: "Residence", facts: ["Gate closes ~ 8:00–8:30 PM", "No outside / non-veg food", "No kettles or cooking gear", "Laundry Fri & Sat · ironing extra"] },
-  { id: "mess", name: "Mess", x: 22, y: 72, tag: "Dining", facts: ["Lunch 1:20 PM – 2:10 PM", "Daily rotating menu", "Veg dining hall"], tip: "Photograph weekly menu near entry." },
-  { id: "ground", name: "Sports Ground", x: 58, y: 60, tag: "Play", facts: ["Football, cricket, basketball, volleyball"], tip: "Open till 7 PM — bring your own ball." },
-  { id: "library", name: "Library", x: 50, y: 28, tag: "Study", facts: ["Reference + digital section", "Silent zones on upper floors", "Carry ID for entry"] },
-  { id: "medical", name: "Medical Centre", x: 72, y: 38, tag: "Health", facts: ["First-aid + on-call doctor", "Save number in your phone"] },
-  { id: "admin", name: "Administrative Block", x: 80, y: 28, tag: "Office", facts: ["Fees, ID, hostel admin", "Visit during morning hours"] },
-  { id: "clubs", name: "Club Activity Area", x: 64, y: 70, tag: "Culture", facts: ["Practice & meetup zone", "Follow clubs on Instagram for slots"] },
+  { id: "academic", name: "Academic Block", x: 41, y: 30, tag: "Classes & Labs", facts: ["Timings ~ 8:45 AM – 5:00 PM", "Schedule varies by department", "Lecture halls, labs & faculty rooms"], tip: "Reach 10 min early on Day 1." },
+  { id: "canteen", name: "Canteen", x: 31, y: 48, tag: "Food & hangout", facts: ["Open 8:00 AM – 8:30 PM", "Egg + Non-veg available", "Popular: Masala Dosa"], tip: "Eat in — takeaway to hostel is limited." },
+  { id: "boys", name: "Boys Hostel", x: 10, y: 82, tag: "Residence", facts: ["Gate closes ~ 8:45–9:00 PM", "No outside / non-veg food", "No kettles or cooking gear", "Laundry every weekend"] },
+  { id: "girls", name: "Girls Hostel", x: 31, y: 82, tag: "Residence", facts: ["Gate closes ~ 8:00–8:30 PM", "No outside / non-veg food", "No kettles or cooking gear", "Laundry Fri & Sat · ironing extra"] },
+  { id: "staff", name: "Staff Quarters", x: 6, y: 42, tag: "Faculty", facts: ["Faculty residential area", "Restricted — students not permitted inside"] },
+  { id: "ground", name: "Sports Ground", x: 63, y: 65, tag: "Play", facts: ["Football · cricket · basketball · volleyball", "Tracks around the oval"], tip: "Open till 7 PM — bring your own ball." },
+  { id: "basketball", name: "Basketball Court", x: 56, y: 60, tag: "Sport", facts: ["Inside the main ground", "Open evenings"] },
+  { id: "volleyball", name: "Volleyball Court", x: 71, y: 60, tag: "Sport", facts: ["Inside the main ground", "Bring your own ball"] },
+  { id: "cricket", name: "Cricket Play Area", x: 62, y: 71, tag: "Sport", facts: ["Center of the ground", "Gear stored at Avisruta Sports Club"] },
+  { id: "football", name: "Football Court", x: 62, y: 83, tag: "Sport", facts: ["South side of the ground", "Pickup games most evenings"] },
+  { id: "parcel", name: "Parcel Room", x: 92, y: 50, tag: "Deliveries", facts: ["Pick up online orders here", "Carry your ID for collection", "Check timings on hostel notice board"] },
+  { id: "entrance", name: "Main Entrance", x: 95, y: 26, tag: "Gate", facts: ["Primary campus gate", "ID check on entry", "Visitors must be pre-approved"] },
+  { id: "restrictedRoad", name: "Restricted Road", x: 78, y: 93, tag: "Restricted", facts: ["No student movement here", "Service & construction access only"] },
+  { id: "construction", name: "Construction Area", x: 70, y: 16, tag: "Restricted", facts: ["Active construction zone", "Strictly off-limits", "Stay clear — heavy machinery"] },
+  { id: "restricted", name: "Restricted Area", x: 19, y: 14, tag: "Restricted", facts: ["No-entry zone for students", "Marked with red striping"] },
 ];
+
 
 const tour = [
   { name: "Main Gate", desc: "Where every story begins. Security, ID check, and the iconic Amrita arch.", emoji: "🚪" },
