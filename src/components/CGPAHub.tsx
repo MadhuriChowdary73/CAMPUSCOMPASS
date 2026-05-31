@@ -3,15 +3,16 @@ import { Plus, Trash2, Calculator, TrendingUp } from "lucide-react";
 
 type Course = { name: string; credits: number; grade: number };
 const GRADES = [
-  { l: "O", v: 10 }, { l: "A+", v: 9 }, { l: "A", v: 8 }, { l: "B+", v: 7 },
-  { l: "B", v: 6 }, { l: "C", v: 5 }, { l: "P", v: 4 }, { l: "F", v: 0 },
+  { l: "O", v: 10 }, { l: "A+", v: 9.5 }, { l: "A", v: 9 }, { l: "B+", v: 8 },
+  { l: "B", v: 7 }, { l: "C", v: 6 }, { l: "P", v: 5 }, { l: "F", v: 0 }, { l: "FA", v: 0 },
 ];
+
 
 export function CGPAHub() {
   const [courses, setCourses] = useState<Course[]>([
-    { name: "Mathematics", credits: 4, grade: 9 },
+    { name: "Mathematics", credits: 4, grade: 9.5 },
     { name: "Programming", credits: 4, grade: 10 },
-    { name: "Physics", credits: 3, grade: 8 },
+    { name: "Physics", credits: 3, grade: 9 },
   ]);
   const [sgpas, setSgpas] = useState<{ sem: number; sgpa: number; credits: number }[]>([
     { sem: 1, sgpa: 8.5, credits: 22 },
@@ -105,8 +106,8 @@ export function CGPAHub() {
             <Plus className="h-3.5 w-3.5" /> Add semester
           </button>
 
-          <div className="mt-5 grid grid-cols-4 gap-2">
-            {GRADES.slice(0, 4).map((g) => (
+          <div className="mt-5 grid grid-cols-5 gap-2">
+            {GRADES.slice(0, 5).map((g) => (
               <div key={g.l} className="rounded-xl border border-border bg-card/50 p-2 text-center">
                 <div className="font-display text-sm font-bold">{g.l}</div>
                 <div className="text-[10px] text-muted-foreground">{g.v} pts</div>
@@ -120,7 +121,7 @@ export function CGPAHub() {
         {[
           { i: Calculator, t: "Auto SGPA", d: "Credits × Grade points / total credits" },
           { i: TrendingUp, t: "Live CGPA", d: "Weighted across all semesters" },
-          { i: Calculator, t: "Grade scale", d: "O=10, A+=9, A=8, B+=7, B=6, C=5, P=4, F=0" },
+          { i: Calculator, t: "Grade scale", d: "O=10, A+=9.5, A=9, B+=8, B=7, C=6, P=5, F/FA=0" },
         ].map((x) => (
           <div key={x.t} className="glass rounded-2xl p-4">
             <x.i className="h-5 w-5 text-gold" />
