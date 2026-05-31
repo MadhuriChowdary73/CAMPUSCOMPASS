@@ -117,6 +117,40 @@ export function CGPAHub() {
         </div>
       </div>
 
+      {/* Scholarship Renewal Conditions */}
+      <div className="mt-6 glass rounded-3xl p-6 ring-glow">
+        <div className="mb-4 flex items-center gap-2">
+          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gold/15 text-lg">🎯</div>
+          <div>
+            <div className="text-[10px] uppercase tracking-widest text-gold">Critical — Read Carefully</div>
+            <h3 className="font-display text-xl font-bold">Academic Conditions for Renewal</h3>
+          </div>
+        </div>
+        <p className="mb-4 text-sm text-muted-foreground">To keep your allocated fee slab and scholarship in subsequent years, you must meet the following performance metrics established by the university:</p>
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="rounded-2xl border border-border bg-card/60 p-4">
+            <div className="text-xs uppercase tracking-widest text-muted-foreground">Slab 1</div>
+            <div className="mt-1 font-display text-2xl font-bold text-primary">≥ 8.0</div>
+            <div className="text-sm text-muted-foreground">CGPA at the end of each academic year</div>
+          </div>
+          <div className="rounded-2xl border border-border bg-card/60 p-4">
+            <div className="text-xs uppercase tracking-widest text-muted-foreground">Slab 2</div>
+            <div className="mt-1 font-display text-2xl font-bold text-primary">≥ 7.5</div>
+            <div className="text-sm text-muted-foreground">CGPA at the end of each academic year</div>
+          </div>
+          <div className="rounded-2xl border border-destructive/30 bg-destructive/5 p-4">
+            <div className="text-xs uppercase tracking-widest text-destructive">"No Arrear" Policy</div>
+            <div className="mt-1 font-display text-lg font-bold text-destructive">Zero Backlogs</div>
+            <div className="text-sm text-muted-foreground">Clear every semester without any backlogs</div>
+          </div>
+          <div className="rounded-2xl border border-border bg-card/60 p-4">
+            <div className="text-xs uppercase tracking-widest text-muted-foreground">Discipline</div>
+            <div className="mt-1 font-display text-lg font-bold text-foreground">Clean Record</div>
+            <div className="text-sm text-muted-foreground">No disciplinary actions recorded against you</div>
+          </div>
+        </div>
+      </div>
+
       <div className="mt-6 grid gap-3 md:grid-cols-3">
         {[
           { i: Calculator, t: "Auto SGPA", d: "Credits × Grade points / total credits" },
