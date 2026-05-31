@@ -24,7 +24,7 @@ const portals = [
     tag: "Attendance · Gate Pass",
     desc: "Mobile app for daily campus life — live attendance %, gate pass requests for leaving campus, and instant student updates.",
     color: "from-primary/30 to-gold/20",
-    url: "#",
+    url: "https://play.google.com/store/search?q=student+portal+amrita&c=apps&hl=en_IN",
     icon: Smartphone,
     fns: ["Live Attendance %", "Subject-wise Attendance", "Gate Pass Requests", "Leave Approval Status", "Push Notifications", "Student Updates"],
   },
