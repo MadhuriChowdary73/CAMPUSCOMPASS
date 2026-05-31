@@ -106,8 +106,8 @@ export function CGPAHub() {
             <Plus className="h-3.5 w-3.5" /> Add semester
           </button>
 
-          <div className="mt-5 grid grid-cols-4 gap-2">
-            {GRADES.slice(0, 4).map((g) => (
+          <div className="mt-5 grid grid-cols-5 gap-2">
+            {GRADES.slice(0, 5).map((g) => (
               <div key={g.l} className="rounded-xl border border-border bg-card/50 p-2 text-center">
                 <div className="font-display text-sm font-bold">{g.l}</div>
                 <div className="text-[10px] text-muted-foreground">{g.v} pts</div>
