@@ -3,9 +3,10 @@ import { Plus, Trash2, Calculator, TrendingUp } from "lucide-react";
 
 type Course = { name: string; credits: number; grade: number };
 const GRADES = [
-  { l: "O", v: 10 }, { l: "A+", v: 9 }, { l: "A", v: 8 }, { l: "B+", v: 7 },
-  { l: "B", v: 6 }, { l: "C", v: 5 }, { l: "P", v: 4 }, { l: "F", v: 0 },
+  { l: "O", v: 10 }, { l: "A+", v: 9.5 }, { l: "A", v: 9 }, { l: "B+", v: 8 },
+  { l: "B", v: 7 }, { l: "C", v: 6 }, { l: "P", v: 5 }, { l: "F", v: 0 }, { l: "FA", v: 0 },
 ];
+
 
 export function CGPAHub() {
   const [courses, setCourses] = useState<Course[]>([
