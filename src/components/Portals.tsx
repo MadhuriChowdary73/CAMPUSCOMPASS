@@ -64,6 +64,7 @@ export function Portals() {
             <div className="mt-4">
               <div className="text-[10px] uppercase tracking-widest text-gold">{p.tag}</div>
               <div className="font-display text-xl font-bold">{p.name}</div>
+              <p className="mt-1.5 text-xs text-muted-foreground">{p.desc}</p>
             </div>
             <ul className="mt-3 grid grid-cols-2 gap-1.5 text-xs text-muted-foreground">
               {p.fns.map((f) => <li key={f} className="flex items-center gap-1.5"><CheckCircle2 className="h-3.5 w-3.5 text-primary" />{f}</li>)}
