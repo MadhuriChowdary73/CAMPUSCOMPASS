@@ -62,6 +62,7 @@ export function Clubs() {
             <div>
               <div className="text-[10px] uppercase tracking-widest text-gold">{c.tag}</div>
               <div className="font-display text-base font-bold">{c.name}</div>
+              <p className="mt-1 text-[11px] leading-snug text-muted-foreground">{c.desc}</p>
             </div>
             <div className="mt-auto flex gap-2">
               <a href={c.ig} target="_blank" rel="noreferrer" className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-xl bg-primary px-2.5 py-1.5 text-xs font-semibold text-primary-foreground">
