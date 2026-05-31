@@ -12,6 +12,7 @@ const faqs = [
   { q: "When is laundry day?", a: "Girls Hostel: Fri & Sat. Boys Hostel: weekends. Ironing is charged extra." },
   { q: "Where can I play sports?", a: "Sports ground — football, cricket, basketball, volleyball. Open till ~7 PM." },
   { q: "Most popular canteen dish?", a: "Masala Dosa, hands down. Egg + non-veg also available." },
+  { q: "Is Wi-Fi available on campus?", a: "Yes — Wi-Fi covers every hostel room, the library and the entire campus. Note: no Wi-Fi inside the canteen." },
 ];
 
 export function FAQ() {

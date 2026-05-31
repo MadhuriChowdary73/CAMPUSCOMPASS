@@ -1,4 +1,4 @@
-import { ExternalLink, PlayCircle, Wallet, ClipboardList, Smartphone, HelpCircle, CheckCircle2 } from "lucide-react";
+import { ExternalLink, Wallet, ClipboardList, Smartphone, HelpCircle, CheckCircle2 } from "lucide-react";
 
 const portals = [
   {
@@ -38,14 +38,6 @@ const decision = [
   { q: "Need Gate Pass?", a: "Student App" },
 ];
 
-const tutorials = [
-  "How to Pay Fees",
-  "How to Check CIA Marks",
-  "How to Check Results",
-  "How to Track Attendance",
-  "How to Request Gate Pass",
-];
-
 export function Portals() {
   return (
     <section id="portals" className="mx-auto max-w-7xl px-4 py-20">
@@ -73,41 +65,22 @@ export function Portals() {
               <a href={p.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 rounded-xl bg-primary px-3 py-2 text-xs font-semibold text-primary-foreground">
                 Open Portal <ExternalLink className="h-3.5 w-3.5" />
               </a>
-              <button className="inline-flex items-center gap-1.5 rounded-xl border border-border bg-card px-3 py-2 text-xs font-semibold">
-                <PlayCircle className="h-3.5 w-3.5" /> Video Guide
-              </button>
             </div>
           </div>
         ))}
       </div>
 
       {/* Decision tree */}
-      <div className="mt-12 grid gap-5 lg:grid-cols-[1fr_1.2fr]">
+      <div className="mt-12">
         <div className="glass rounded-3xl p-6 ring-glow">
           <div className="flex items-center gap-2 text-gold"><HelpCircle className="h-4 w-4" /><div className="text-[10px] uppercase tracking-widest">Decision tree</div></div>
           <h3 className="mt-2 font-display text-2xl font-bold">Which portal should I use?</h3>
-          <div className="mt-5 space-y-2.5">
+          <div className="mt-5 grid gap-2.5 sm:grid-cols-2">
             {decision.map((d) => (
               <div key={d.q} className="flex items-center justify-between rounded-xl border border-border bg-card/60 px-4 py-3">
                 <span className="text-sm">{d.q}</span>
                 <span className="rounded-lg bg-primary/15 px-2.5 py-1 text-xs font-bold text-primary">{d.a}</span>
               </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="glass rounded-3xl p-6 ring-glow">
-          <div className="text-[10px] uppercase tracking-widest text-gold">Learning Center</div>
-          <h3 className="mt-1 font-display text-2xl font-bold">Portal walkthroughs</h3>
-          <div className="mt-5 grid gap-3 sm:grid-cols-2">
-            {tutorials.map((t) => (
-              <button key={t} className="group flex items-center justify-between rounded-2xl border border-border bg-card/60 p-4 text-left transition hover:bg-accent">
-                <div>
-                  <div className="text-sm font-semibold">{t}</div>
-                  <div className="text-[11px] text-muted-foreground">Video · Screenshots · Steps</div>
-                </div>
-                <PlayCircle className="h-6 w-6 text-primary transition group-hover:scale-110" />
-              </button>
             ))}
           </div>
         </div>
