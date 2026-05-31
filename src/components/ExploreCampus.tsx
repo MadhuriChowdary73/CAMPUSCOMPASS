@@ -59,8 +59,8 @@ export function ExploreCampus() {
       <div className="grid gap-6 lg:grid-cols-[2fr_1fr]">
         {/* MAP PANEL */}
         <div className="glass relative overflow-hidden rounded-3xl p-3 ring-glow">
-          <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl bg-black/30">
-            <img src={mapImg} alt="Campus locator map" className="absolute inset-0 h-full w-full object-cover" />
+          <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl bg-muted/40">
+            <img src={mapImg} alt="Campus locator map" className="absolute inset-0 h-full w-full object-contain" />
             {spots.map((s) => (
               <button
                 key={s.id}
