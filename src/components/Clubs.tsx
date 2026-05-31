@@ -3,16 +3,17 @@ import { ArrowUpRight, Sparkles } from "lucide-react";
 import { InstagramIcon as Instagram } from "@/components/icons/InstagramIcon";
 
 const clubs = [
-  { name: "Chakravyuha", tag: "Cybersecurity", ig: "https://www.instagram.com/chakravyuha_avv/", grad: "from-primary/60 to-gold/30" },
-  { name: "Relu", tag: "AI / ML", ig: "https://www.instagram.com/relu_avv/", grad: "from-primary/50 to-primary/10" },
-  { name: "Prachurya", tag: "Literary", ig: "https://www.instagram.com/prachurya_avv/", grad: "from-gold/50 to-primary/20" },
-  { name: "Robotics Club", tag: "Robotics", ig: "https://www.instagram.com/roboticsclub.avv/", grad: "from-primary/60 to-primary/10" },
-  { name: "Drsya", tag: "Photography", ig: "https://www.instagram.com/drsya__av/", grad: "from-gold/40 to-primary/30" },
-  { name: "Advika", tag: "Innovation", ig: "https://www.instagram.com/advika_avv/", grad: "from-primary/40 to-gold/40" },
-  { name: "Saptaswara", tag: "Music", ig: "https://www.instagram.com/saptaswara_av/", grad: "from-gold/50 to-gold/10" },
-  { name: "Nrityasparsh", tag: "Dance", ig: "https://www.instagram.com/nrityasparsh_av/", grad: "from-primary/50 to-gold/30" },
-  { name: "Avisruta", tag: "Sports", ig: "https://www.instagram.com/avisruta_avv/", grad: "from-primary/60 to-primary/20" },
-  { name: "Raksha", tag: "Safety & service", ig: "#", grad: "from-gold/40 to-primary/40" },
+  { name: "Relu", tag: "AI / ML", desc: "Refining Logic & Unleashing AI — workshops and projects in AI/ML.", ig: "https://www.instagram.com/relu_avv/", grad: "from-primary/50 to-primary/10" },
+  { name: "Robotics Club", tag: "Robotics", desc: "Build bots, learn embedded systems, compete in robotics events.", ig: "https://www.instagram.com/roboticsclub.avv/", grad: "from-primary/60 to-primary/10" },
+  { name: "Avisruta", tag: "Sports", desc: "Campus sports club — tournaments, training and inter-college fixtures.", ig: "https://www.instagram.com/avisruta_avv/", grad: "from-primary/60 to-primary/20" },
+  { name: "Chakravyuha", tag: "Hackathons", desc: "Hackathons and problem-solving skills — coding contests and challenges.", ig: "https://www.instagram.com/chakravyuha_avv/", grad: "from-primary/60 to-gold/30" },
+  { name: "Prachurya", tag: "Tech Events", desc: "Conducts tech events, talks and developer meetups on campus.", ig: "https://www.instagram.com/prachurya_avv/", grad: "from-gold/50 to-primary/20" },
+  { name: "Raksha", tag: "Announcements", desc: "Club announcements and official student club communications hub.", ig: "#", grad: "from-gold/40 to-primary/40" },
+  { name: "Drsya", tag: "Media", desc: "Media club — photography, videography and campus coverage.", ig: "https://www.instagram.com/drsya__av/", grad: "from-gold/40 to-primary/30" },
+  { name: "Advika", tag: "Art", desc: "Art club — painting, sketching, design and creative showcases.", ig: "https://www.instagram.com/advika_avv/", grad: "from-primary/40 to-gold/40" },
+  { name: "Saptaswara", tag: "Singing", desc: "Singing club — vocals, choir, open mics and music nights.", ig: "https://www.instagram.com/saptaswara_av/", grad: "from-gold/50 to-gold/10" },
+  { name: "Nrityasparsh", tag: "Dance", desc: "Dance club — choreography, performances and dance workshops.", ig: "https://www.instagram.com/nrityasparsh_av/", grad: "from-primary/50 to-gold/30" },
+  { name: "Student Council", tag: "Council", desc: "Official Amrita Student Council — leadership, events & student voice.", ig: "https://www.instagram.com/amritastudentcouncil/", grad: "from-primary/70 to-gold/40" },
 ];
 
 const quiz = [
