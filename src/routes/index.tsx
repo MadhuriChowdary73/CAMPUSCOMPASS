@@ -12,7 +12,7 @@ import { TechToolkit } from "@/components/TechToolkit";
 import { SurvivalKit } from "@/components/SurvivalKit";
 import { FirstMonth } from "@/components/FirstMonth";
 import { FAQ } from "@/components/FAQ";
-import { Resources } from "@/components/Resources";
+
 import { Ticker } from "@/components/Ticker";
 import { Footer } from "@/components/Footer";
 import { CommandPalette } from "@/components/CommandPalette";
