@@ -3,27 +3,30 @@ import { ExternalLink, PlayCircle, Wallet, ClipboardList, Smartphone, HelpCircle
 const portals = [
   {
     name: "MyAmrita Portal",
-    tag: "Fees · Profile · Services",
+    tag: "Individual Fee Payment · Profile",
+    desc: "All details of your individual fee payment — semester fees, hostel, mess, transport. Download receipts and track dues.",
     color: "from-primary/40 to-primary/10",
     url: "https://my.amrita.edu/index/login",
     icon: Wallet,
-    fns: ["Fee Payment", "Fee Tracking", "Receipts", "Student Profile", "Notifications", "Student Services", "Academic Information"],
+    fns: ["Individual Fee Payment", "Pending Dues", "Payment History", "Download Receipts", "Student Profile", "Hostel / Mess Fees", "Notifications"],
   },
   {
     name: "AUMS Amaravati",
-    tag: "Academics · Marks · Results",
+    tag: "Exams · Results · Hall Tickets",
+    desc: "The exams portal — CIA marks, lab test marks, mid-sem, end-sem results, hall tickets and attendance summary published by faculty.",
     color: "from-gold/40 to-gold/10",
     url: "https://aumscn.amrita.edu/cas/login?service=https%3A%2F%2Faumscn.amrita.edu%2Faums%2FJsp%2FCore_Common%2Findex.jsp",
     icon: ClipboardList,
-    fns: ["CIA Marks", "Results", "Academic Records", "Examination Details", "Course Info", "Faculty Info"],
+    fns: ["CIA Marks", "Lab Test Marks", "Mid-Sem Results", "End-Sem Results", "Hall Tickets", "Course Registration", "Faculty Info"],
   },
   {
     name: "Amrita Student App",
     tag: "Attendance · Gate Pass",
+    desc: "Mobile app for daily campus life — live attendance %, gate pass requests for leaving campus, and instant student updates.",
     color: "from-primary/30 to-gold/20",
     url: "#",
     icon: Smartphone,
-    fns: ["Attendance Tracking", "Attendance %", "Gate Pass Requests", "Student Updates", "Notifications"],
+    fns: ["Live Attendance %", "Subject-wise Attendance", "Gate Pass Requests", "Leave Approval Status", "Push Notifications", "Student Updates"],
   },
 ];
 
