@@ -121,7 +121,7 @@ export function CGPAHub() {
         {[
           { i: Calculator, t: "Auto SGPA", d: "Credits × Grade points / total credits" },
           { i: TrendingUp, t: "Live CGPA", d: "Weighted across all semesters" },
-          { i: Calculator, t: "Grade scale", d: "O=10, A+=9, A=8, B+=7, B=6, C=5, P=4, F=0" },
+          { i: Calculator, t: "Grade scale", d: "O=10, A+=9.5, A=9, B+=8, B=7, C=6, P=5, F/FA=0" },
         ].map((x) => (
           <div key={x.t} className="glass rounded-2xl p-4">
             <x.i className="h-5 w-5 text-gold" />
