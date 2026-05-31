@@ -44,8 +44,8 @@ export function Clubs() {
         <div className="grid aspect-square place-items-center overflow-hidden rounded-2xl bg-gradient-to-br from-primary/60 to-gold/30 text-6xl">⚡</div>
         <div>
           <div className="inline-flex items-center gap-2 text-[10px] uppercase tracking-widest text-gold"><Sparkles className="h-3 w-3" /> Featured spotlight</div>
-          <div className="mt-1 font-display text-2xl font-bold">Chakravyuha · Cybersecurity Club</div>
-          <p className="mt-2 text-sm text-muted-foreground">CTFs, hands-on security workshops, red-team challenges, and an active Instagram for events. Beginner-friendly — no prior security experience required.</p>
+          <div className="mt-1 font-display text-2xl font-bold">Chakravyuha · Hackathons & Problem Solving</div>
+          <p className="mt-2 text-sm text-muted-foreground">Hackathons, coding contests, problem-solving sessions and DSA challenges. Beginner-friendly — sharpen your skills with active student-led events.</p>
           <a href="https://www.instagram.com/chakravyuha_avv/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center gap-2 rounded-xl bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground">
             <Instagram className="h-4 w-4" /> Follow @chakravyuha_avv
           </a>
