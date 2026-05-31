@@ -1,4 +1,4 @@
-import hero from "@/assets/hero-campus.jpg";
+import hero from "@/assets/hero-campus.svg";
 import { ArrowRight, Sparkles, MapPin, GraduationCap, Users, BookOpen, Calculator, ShieldCheck } from "lucide-react";
 
 const stats = [
