@@ -82,9 +82,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "The premium onboarding platform for Amrita Vishwa Vidyapeetham, Amaravati. Interactive campus map, portals, clubs, CGPA hub and survival kit for the 2026 batch." },
       { name: "author", content: "Campus Compass" },
       { property: "og:title", content: "Campus Compass 2026 — Fresher OS for Amrita Amaravati" },
-      { property: "og:description", content: "Interactive campus map, portals, clubs, CGPA hub and survival kit — built for the 2026 batch." },
+      { property: "og:description", content: "The premium onboarding platform for Amrita Vishwa Vidyapeetham, Amaravati. Interactive campus map, portals, clubs, CGPA hub and survival kit for the 2026 batch." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Campus Compass 2026 — Fresher OS for Amrita Amaravati" },
+      { name: "twitter:description", content: "The premium onboarding platform for Amrita Vishwa Vidyapeetham, Amaravati. Interactive campus map, portals, clubs, CGPA hub and survival kit for the 2026 batch." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/37a7404b-03ac-455f-b083-d1137b178517/id-preview-012aa629--81b1c847-223a-42f1-99c6-3f13b642abe6.lovable.app-1780242120642.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/37a7404b-03ac-455f-b083-d1137b178517/id-preview-012aa629--81b1c847-223a-42f1-99c6-3f13b642abe6.lovable.app-1780242120642.png" },
     ],
 
     links: [
