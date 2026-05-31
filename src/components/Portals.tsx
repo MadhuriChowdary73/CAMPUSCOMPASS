@@ -1,4 +1,4 @@
-import { ExternalLink, PlayCircle, Wallet, ClipboardList, Smartphone, HelpCircle, CheckCircle2 } from "lucide-react";
+import { ExternalLink, Wallet, ClipboardList, Smartphone, HelpCircle, CheckCircle2 } from "lucide-react";
 
 const portals = [
   {
