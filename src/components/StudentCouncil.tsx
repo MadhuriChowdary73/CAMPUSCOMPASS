@@ -1,4 +1,5 @@
-import { Instagram, Users, Megaphone, Layers } from "lucide-react";
+import { Users, Megaphone, Layers } from "lucide-react";
+import { InstagramIcon as Instagram } from "@/components/icons/InstagramIcon";
 
 export function StudentCouncil() {
   return (

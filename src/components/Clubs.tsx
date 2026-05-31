@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Instagram, ArrowUpRight, Sparkles } from "lucide-react";
+import { ArrowUpRight, Sparkles } from "lucide-react";
+import { InstagramIcon as Instagram } from "@/components/icons/InstagramIcon";
 
 const clubs = [
   { name: "Chakravyuha", tag: "Cybersecurity", ig: "https://www.instagram.com/chakravyuha_avv/", grad: "from-primary/60 to-gold/30" },
