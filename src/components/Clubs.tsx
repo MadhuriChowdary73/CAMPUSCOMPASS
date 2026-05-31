@@ -17,8 +17,8 @@ const clubs = [
 ];
 
 const quiz = [
-  { q: "Pick a vibe", opts: [{ l: "Build stuff", v: ["Robotics Club", "Relu", "Advika"] }, { l: "Perform", v: ["Saptaswara", "Nrityasparsh", "Drsya"] }, { l: "Compete", v: ["Avisruta", "Chakravyuha"] }, { l: "Express", v: ["Prachurya", "Drsya"] }] },
-  { q: "Weekend energy", opts: [{ l: "Lab / code", v: ["Relu", "Chakravyuha", "Robotics Club"] }, { l: "Stage / studio", v: ["Saptaswara", "Nrityasparsh"] }, { l: "Field", v: ["Avisruta"] }, { l: "Camera / pen", v: ["Drsya", "Prachurya"] }] },
+  { q: "Pick a vibe", opts: [{ l: "Build stuff", v: ["Robotics Club", "Relu", "Advika"] }, { l: "Perform", v: ["Saptaswara", "Nrityasparsh", "Drsya"] }, { l: "Compete", v: ["Avisruta", "Chakravyuha"] }, { l: "Organise", v: ["Prachurya", "Student Council", "Raksha"] }] },
+  { q: "Weekend energy", opts: [{ l: "Lab / code", v: ["Relu", "Chakravyuha", "Robotics Club"] }, { l: "Stage / studio", v: ["Saptaswara", "Nrityasparsh"] }, { l: "Field", v: ["Avisruta"] }, { l: "Camera / art", v: ["Drsya", "Advika"] }] },
 ];
 
 export function Clubs() {
