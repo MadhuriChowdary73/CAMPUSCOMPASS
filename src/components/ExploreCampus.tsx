@@ -69,7 +69,9 @@ export function ExploreCampus() {
                 onClick={() => setActive(s)}
                 aria-label={s.name}
                 title={s.name}
-              />
+              >
+                <span className="pointer-events-none text-xl leading-none">📍</span>
+              </button>
             ))}
             {active && (
               <div className="glass absolute bottom-3 left-3 right-3 max-w-md rounded-2xl p-4 md:left-4 md:right-auto md:bottom-4">
