@@ -9,6 +9,7 @@ const nav = [
   { href: "#cgpa", label: "CGPA" },
   { href: "#survival", label: "Survival Kit" },
   { href: "#faq", label: "FAQ" },
+  { href: "#life", label: "Life" },
 ];
 
 export function Header({ onSearch }: { onSearch: () => void }) {
