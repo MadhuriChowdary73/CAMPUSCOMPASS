@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { X, Camera, Heart } from "lucide-react";
 
-import life1 from "@/assets/life-1.jpg";
-import life2 from "@/assets/life-2.jpg";
-import life3 from "@/assets/life-3.jpg";
+import life1 from "@/assets/life-1.png";
 import life4 from "@/assets/life-4.jpg";
+import life3 from "@/assets/life-3.jpg";
+import life2 from "@/assets/life-2.jpg";
 import life5 from "@/assets/life-5.jpg";
 import life6 from "@/assets/life-6.jpg";
 import life7 from "@/assets/life-7.jpg";
@@ -19,12 +19,12 @@ type Photo = {
 };
 
 const photos: Photo[] = [
-  { src: life1, caption: "Sports day — chasing finish lines together", span: "col-span-2 row-span-2" },
-  { src: life2, caption: "Mass meditation — calm before the grind", span: "col-span-1 row-span-1" },
+  { src: life1, caption: "Sports day — chasing finish together", span: "col-span-2 row-span-2" },
+  { src: life4, caption: "Republic Day — flag march with pride", span: "col-span-1 row-span-1" },
   { src: life3, caption: "Christmas carols on campus", span: "col-span-1 row-span-1" },
-  { src: life4, caption: "Republic Day — flag march with pride", span: "col-span-2 row-span-1" },
-  { src: life5, caption: "Project huddles — ideas in motion", span: "col-span-1 row-span-2" },
-  { src: life6, caption: "Holi vibes — colors everywhere", span: "col-span-2 row-span-1" },
+  { src: life2, caption: "Holi vibes — colors everywhere", span: "col-span-2 row-span-1" },
+  { src: life5, caption: "Project huddles — ideas in motion", span: "col-span-2 row-span-2" },
+  { src: life6, caption: "Mass meditation — calm before the grind", span: "col-span-2 row-span-1" },
   { src: life7, caption: "Maha Shivaratri — classical & divine", span: "col-span-1 row-span-1" },
   { src: life8, caption: "Art workshop — creativity in focus", span: "col-span-1 row-span-1" },
   { src: life9, caption: "Dance battles in the auditorium", span: "col-span-2 row-span-1" },

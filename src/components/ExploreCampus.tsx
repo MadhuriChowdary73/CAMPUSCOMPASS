@@ -1,6 +1,12 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, MapPin, X, Lightbulb } from "lucide-react";
 import mapImg from "@/assets/campus-map.png";
+import classroomImg from "@/assets/classroom.png";
+import libraryImg from "@/assets/library.png";
+import gymImg from "@/assets/gym.png";
+import academicBlockImg from "@/assets/academicblock.png";
+import hostelImg from "@/assets/hostel.png";
+import seminarHallImg from "@/assets/seminarhall.png";
 
 type Spot = {
   id: string;
@@ -32,13 +38,38 @@ const spots: Spot[] = [
 
 
 const tour = [
-  { name: "Main Gate", desc: "Where every story begins. Security, ID check, and the iconic Amrita arch.", emoji: "🚪" },
-  { name: "Academic Block", desc: "Classrooms, labs and faculty corridors. Your weekday HQ.", emoji: "🏛️" },
-  { name: "Library", desc: "Reference + silent zones. Carry your ID.", emoji: "📚" },
-  { name: "Canteen", desc: "Masala dosa, conversations, between-class fuel.", emoji: "🍽️" },
-  { name: "Hostel", desc: "Your home base. Know your gate timings.", emoji: "🛏️" },
-  { name: "Student Activity Area", desc: "Where clubs rehearse, jam and prep events.", emoji: "🎭" },
+  {
+    name: "Classroom",
+    desc: "Your academic journey starts here. Attend lectures, interact with faculty and build strong fundamentals.",
+    image: classroomImg,
+  },
+  {
+    name: "Academic Block",
+    desc: "The heart of campus academics with classrooms, laboratories and faculty offices.",
+    image: academicBlockImg,
+  },
+  {
+    name: "Library",
+    desc: "A peaceful place for studying, reading and accessing academic resources.",
+    image: libraryImg,
+  },
+  {
+    name: "Seminar Hall",
+    desc: "Home to orientations, workshops, guest lectures and major campus events.",
+    image: seminarHallImg,
+  },
+  {
+    name: "Hostel",
+    desc: "Your home away from home. Get familiar with hostel facilities and regulations.",
+    image: hostelImg,
+  },
+  {
+    name: "Gym",
+    desc: "Stay active and healthy with modern fitness equipment and workout facilities.",
+    image: gymImg,
+  },
 ];
+
 
 export function ExploreCampus() {
   const [active, setActive] = useState<Spot | null>(null);
@@ -103,8 +134,12 @@ export function ExploreCampus() {
           <div className="text-[10px] uppercase tracking-widest text-gold">First Day Tour</div>
           <div className="mt-1 font-display text-2xl font-bold">Stop {stop + 1} / {tour.length}</div>
 
-          <div className="mt-4 grid aspect-[4/3] place-items-center overflow-hidden rounded-2xl bg-gradient-to-br from-primary/40 via-primary/10 to-gold/20 text-6xl">
-            {tour[stop].emoji}
+          <div className="mt-4 overflow-hidden rounded-2xl">
+            <img
+              src={tour[stop].image}
+              alt={tour[stop].name}
+              className="aspect-[4/3] h-full w-full object-cover"
+            />
           </div>
 
           <div className="mt-4">

@@ -1,4 +1,8 @@
-import { ExternalLink, Wallet, ClipboardList, Smartphone, HelpCircle, CheckCircle2 } from "lucide-react";
+import { ExternalLink, HelpCircle, CheckCircle2 } from "lucide-react";
+
+import myamritaLogo from "@/assets/myamrita.png";
+import aumsLogo from "@/assets/aums.png";
+import studentsLogo from "@/assets/students.png";
 
 const portals = [
   {
@@ -7,7 +11,7 @@ const portals = [
     desc: "All details of your individual fee payment — semester fees, hostel, mess, transport. Download receipts and track dues.",
     color: "from-primary/40 to-primary/10",
     url: "https://my.amrita.edu/index/login",
-    icon: Wallet,
+    image: myamritaLogo,
     fns: ["Individual Fee Payment", "Pending Dues", "Payment History", "Download Receipts", "Student Profile", "Hostel / Mess Fees", "Notifications"],
   },
   {
@@ -16,7 +20,7 @@ const portals = [
     desc: "The exams portal — CIA marks, lab test marks, mid-sem, end-sem results, hall tickets and attendance summary published by faculty.",
     color: "from-gold/40 to-gold/10",
     url: "https://aumscn.amrita.edu/cas/login?service=https%3A%2F%2Faumscn.amrita.edu%2Faums%2FJsp%2FCore_Common%2Findex.jsp",
-    icon: ClipboardList,
+    image: aumsLogo,
     fns: ["CIA Marks", "Lab Test Marks", "Mid-Sem Results", "End-Sem Results", "Hall Tickets", "Course Registration", "Faculty Info"],
   },
   {
@@ -25,7 +29,7 @@ const portals = [
     desc: "Mobile app for daily campus life — live attendance %, gate pass requests for leaving campus, and instant student updates.",
     color: "from-primary/30 to-gold/20",
     url: "https://play.google.com/store/search?q=student+portal+amrita&c=apps&hl=en_IN",
-    icon: Smartphone,
+    image: studentsLogo,
     fns: ["Live Attendance %", "Subject-wise Attendance", "Gate Pass Requests", "Leave Approval Status", "Push Notifications", "Student Updates"],
   },
 ];
@@ -50,8 +54,16 @@ export function Portals() {
       <div className="grid gap-5 lg:grid-cols-3">
         {portals.map((p) => (
           <div key={p.name} className="glass flex flex-col rounded-3xl p-5 ring-glow">
-            <div className={`grid aspect-[16/9] place-items-center overflow-hidden rounded-2xl bg-gradient-to-br ${p.color}`}>
-              <p.icon className="h-14 w-14 text-foreground/80" />
+            <div
+              className={`flex aspect-[16/9] items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-br ${p.color}`}
+            >
+              <div className="flex h-36 w-36 items-center justify-center rounded-full bg-white shadow-md">
+                <img
+                  src={p.image}
+                  alt={p.name}
+                  className="h-full w-full rounded-full object-cover"
+                />
+              </div>
             </div>
             <div className="mt-4">
               <div className="text-[10px] uppercase tracking-widest text-gold">{p.tag}</div>

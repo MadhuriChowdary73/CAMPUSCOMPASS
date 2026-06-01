@@ -1,20 +1,101 @@
 import { useState } from "react";
 import { ArrowUpRight, Sparkles } from "lucide-react";
 import { InstagramIcon as Instagram } from "@/components/icons/InstagramIcon";
+import reluLogo from "@/assets/relu.png";
+import roboticsLogo from "@/assets/robotics.png";
+import avisrutaLogo from "@/assets/avisruta.png";
+import chakravyuhaLogo from "@/assets/chakravyuha.png";
+import prachuryaLogo from "@/assets/prachurya.png";
+import drsyaLogo from "@/assets/drsya.png";
+import advikaLogo from "@/assets/advika.png";
+import saptaswaraLogo from "@/assets/saptaswara.png";
+import nrityasparshLogo from "@/assets/nrityasparsh.png";
+import councilLogo from "@/assets/student-council.png";
 
 const clubs = [
-  { name: "Relu", tag: "AI / ML", desc: "Refining Logic & Unleashing AI — workshops and projects in AI/ML.", ig: "https://www.instagram.com/relu_avv/", grad: "from-primary/50 to-primary/10" },
-  { name: "Robotics Club", tag: "Robotics", desc: "Build bots, learn embedded systems, compete in robotics events.", ig: "https://www.instagram.com/roboticsclub.avv/", grad: "from-primary/60 to-primary/10" },
-  { name: "Avisruta", tag: "Sports", desc: "Campus sports club — tournaments, training and inter-college fixtures.", ig: "https://www.instagram.com/avisruta_avv/", grad: "from-primary/60 to-primary/20" },
-  { name: "Chakravyuha", tag: "Hackathons", desc: "Hackathons and problem-solving skills — coding contests and challenges.", ig: "https://www.instagram.com/chakravyuha_avv/", grad: "from-primary/60 to-gold/30" },
-  { name: "Prachurya", tag: "Tech Events", desc: "Conducts tech events, talks and developer meetups on campus.", ig: "https://www.instagram.com/prachurya_avv/", grad: "from-gold/50 to-primary/20" },
-  { name: "Raksha", tag: "Announcements", desc: "Club announcements and official student club communications hub.", ig: "#", grad: "from-gold/40 to-primary/40" },
-  { name: "Drsya", tag: "Media", desc: "Media club — photography, videography and campus coverage.", ig: "https://www.instagram.com/drsya__av/", grad: "from-gold/40 to-primary/30" },
-  { name: "Advika", tag: "Art", desc: "Art club — painting, sketching, design and creative showcases.", ig: "https://www.instagram.com/advika_avv/", grad: "from-primary/40 to-gold/40" },
-  { name: "Saptaswara", tag: "Singing", desc: "Singing club — vocals, choir, open mics and music nights.", ig: "https://www.instagram.com/saptaswara_av/", grad: "from-gold/50 to-gold/10" },
-  { name: "Nrityasparsh", tag: "Dance", desc: "Dance club — choreography, performances and dance workshops.", ig: "https://www.instagram.com/nrityasparsh_av/", grad: "from-primary/50 to-gold/30" },
-  { name: "Student Council", tag: "Council", desc: "Official Amrita Student Council — leadership, events & student voice.", ig: "https://www.instagram.com/amritastudentcouncil/", grad: "from-primary/70 to-gold/40" },
+  {
+    name: "Relu",
+    tag: "AI / ML",
+    logo: reluLogo,
+    desc: "Refining Logic & Unleashing AI — workshops and projects in AI/ML.",
+    ig: "https://www.instagram.com/relu_avv/",
+    grad: "from-primary/50 to-primary/10",
+  },
+  {
+    name: "Robotics Club",
+    tag: "Robotics",
+    logo: roboticsLogo,
+    desc: "Build bots, learn embedded systems, compete in robotics events.",
+    ig: "https://www.instagram.com/roboticsclub.avv/",
+    grad: "from-primary/60 to-primary/10",
+  },
+  {
+    name: "Avisruta",
+    tag: "Sports",
+    logo: avisrutaLogo,
+    desc: "Campus sports club — tournaments, training and inter-college fixtures.",
+    ig: "https://www.instagram.com/avisruta_avv/",
+    grad: "from-primary/60 to-primary/20",
+  },
+  {
+    name: "Chakravyuha",
+    tag: "Hackathons",
+    logo: chakravyuhaLogo,
+    desc: "Hackathons and problem-solving skills — coding contests and challenges.",
+    ig: "https://www.instagram.com/chakravyuha_avv/",
+    grad: "from-primary/60 to-gold/30",
+  },
+  {
+    name: "Prachurya",
+    tag: "Tech Events",
+    logo: prachuryaLogo,
+    desc: "Conducts tech events, talks and developer meetups on campus.",
+    ig: "https://www.instagram.com/prachurya_avv/",
+    grad: "from-gold/50 to-primary/20",
+  },
+  
+  {
+    name: "Drsya",
+    tag: "Media",
+    logo: drsyaLogo,
+    desc: "Media club — photography, videography and campus coverage.",
+    ig: "https://www.instagram.com/drsya__av/",
+    grad: "from-gold/40 to-primary/30",
+  },
+  {
+    name: "Advika",
+    tag: "Art",
+    logo: advikaLogo,
+    desc: "Art club — painting, sketching, design and creative showcases.",
+    ig: "https://www.instagram.com/advika_avv/",
+    grad: "from-primary/40 to-gold/40",
+  },
+  {
+    name: "Saptaswara",
+    tag: "Singing",
+    logo: saptaswaraLogo,
+    desc: "Singing club — vocals, choir, open mics and music nights.",
+    ig: "https://www.instagram.com/saptaswara_av/",
+    grad: "from-gold/50 to-gold/10",
+  },
+  {
+    name: "Nrityasparsh",
+    tag: "Dance",
+    logo: nrityasparshLogo,
+    desc: "Dance club — choreography, performances and dance workshops.",
+    ig: "https://www.instagram.com/nrityasparsh_av/",
+    grad: "from-primary/50 to-gold/30",
+  },
+  {
+    name: "Student Council",
+    tag: "Council",
+    logo: councilLogo,
+    desc: "Official Amrita Student Council — leadership, events & student voice.",
+    ig: "https://www.instagram.com/amritastudentcouncil/",
+    grad: "from-primary/70 to-gold/40",
+  },
 ];
+
 
 const quiz = [
   { q: "Pick a vibe", opts: [{ l: "Build stuff", v: ["Robotics Club", "Relu", "Advika"] }, { l: "Perform", v: ["Saptaswara", "Nrityasparsh", "Drsya"] }, { l: "Compete", v: ["Avisruta", "Chakravyuha"] }, { l: "Organise", v: ["Prachurya", "Student Council", "Raksha"] }] },
@@ -41,7 +122,13 @@ export function Clubs() {
 
       {/* Spotlight */}
       <div className="glass mb-8 grid items-center gap-6 rounded-3xl p-6 ring-glow md:grid-cols-[1fr_2fr]">
-        <div className="grid aspect-square place-items-center overflow-hidden rounded-2xl bg-gradient-to-br from-primary/60 to-gold/30 text-6xl">⚡</div>
+        <div className="overflow-hidden rounded-2xl">
+            <img
+              src={chakravyuhaLogo}
+              alt="Chakravyuha"
+              className="h-full w-full object-cover"
+            />
+        </div>
         <div>
           <div className="inline-flex items-center gap-2 text-[10px] uppercase tracking-widest text-gold"><Sparkles className="h-3 w-3" /> Featured spotlight</div>
           <div className="mt-1 font-display text-2xl font-bold">Chakravyuha · Hackathons & Problem Solving</div>
@@ -56,9 +143,17 @@ export function Clubs() {
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {clubs.map((c) => (
           <div key={c.name} className="glass group flex flex-col gap-3 rounded-2xl p-4 transition hover:-translate-y-1">
-            <div className={`grid aspect-[4/3] place-items-center overflow-hidden rounded-xl bg-gradient-to-br ${c.grad} text-3xl font-bold text-white/90`}>
-              {c.name.charAt(0)}
-            </div>
+              <div
+                  className={`flex aspect-[4/3] items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br ${c.grad} p-4`}
+              >
+                <div className="h-36 w-36 overflow-hidden rounded-full border-4 border-white bg-white shadow-md">
+                  <img
+                    src={c.logo}
+                    alt={c.name}
+                    className="h-full w-full rounded-full object-cover"
+                  />
+                </div>
+              </div>
             <div>
               <div className="text-[10px] uppercase tracking-widest text-gold">{c.tag}</div>
               <div className="font-display text-base font-bold">{c.name}</div>
